@@ -11,7 +11,8 @@ import useColorScheme from '../hooks/useColorScheme';
 import FiltersScreen from '../screens/FiltersScreen';
 import IssuesScreen from '../screens/IssuesScreen';
 import BookmarkScreen from '../screens/BookmarkScreen';
-import { RootStackParamList, RootTabParamList, RootTabScreenProps } from '../types';
+import CustomText from '../components/CustomText';
+import { RootStackParamList, RootTabParamList, RootTabScreenProps } from '../types/navigation';
 import LinkingConfiguration from './LinkingConfiguration';
 
 export default function Navigation({ colorScheme }: { colorScheme: ColorSchemeName }) {
@@ -36,7 +37,7 @@ function RootNavigator() {
         screenOptions={{
           presentation: 'modal', 
           headerLeft: (props: any) => {
-            return <Text onPress={() => navigation?.goBack()}>Back</Text>
+            return <CustomText onPress={() => navigation?.goBack()}>Back</CustomText>
           }
       }}>
         <Stack.Screen name="Filters" component={FiltersScreen} />

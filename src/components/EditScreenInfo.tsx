@@ -1,29 +1,27 @@
 import React from 'react';
 import { StyleSheet } from 'react-native';
 
-import Colors from '../constants/Colors';
-import { MonoText } from './StyledText';
-import { Text, View } from './Themed';
+import CustomView from './CustomView';
+import CustomText from './CustomText';
 
 export default function EditScreenInfo({ path }: { path: string }) {
   return (
-    <View>
-      <View style={styles.getStartedContainer}>
-        <Text
-          style={styles.getStartedText}
+    <CustomView>
+      <CustomView style={styles.getStartedContainer}>
+        <CustomText
           lightColor="rgba(0,0,0,0.8)"
           darkColor="rgba(255,255,255,0.8)">
           Open up the code for this screen:
-        </Text>
+        </CustomText>
 
-        <View
+        <CustomView
           style={[styles.codeHighlightContainer, styles.homeScreenFilename]}
           darkColor="rgba(255,255,255,0.05)"
           lightColor="rgba(0,0,0,0.05)">
-          <MonoText>{path}</MonoText>
-        </View>
-      </View>
-    </View>
+          <CustomText>{path}</CustomText>
+        </CustomView>
+      </CustomView>
+    </CustomView>
   );
 }
 
