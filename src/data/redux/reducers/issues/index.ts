@@ -55,14 +55,8 @@ export default (state: IssueState = initialState, action: IssueAction): IssueSta
       };
 
     case IssueActionType.TOGGLE_FILTER:
-      const newFilters = [...state.filters];
-      const targetFilter = newFilters.find((x) => x.id === action.payload);
-
-      if (targetFilter) {
-        targetFilter.isActive = !targetFilter.isActive;
-      } else {
-        throw Error(`Filter doesn't exist`);
-      }
+      const payload = action.payload as string[];
+      const newFilters = [...state.filters].map((filter) => ({...filter, isActive: !!payload.includes(filter.id)}));
 
       return {
         ...state,

@@ -19,9 +19,9 @@ export default function useIssues(): useIssuesReturnedValue {
     dispatch(issueActions.getIssues());
   };
 
-  const setFilter = (filterId: string) => {
+  const setFilter = (filterIds: string[]) => {
     LayoutAnimation.easeInEaseOut();
-    dispatch(issueActions.toggleFilter(filterId));
+    dispatch(issueActions.toggleFilter(filterIds));
     getIssues();
   };
 

@@ -51,7 +51,7 @@ export interface IssueState {
 
 export interface IssueAction {
   type: IssueActionType;
-  payload?: Issue[] | Comment[] | string | number | Error;
+  payload?: Issue[] | Comment[] | string | number | Error | string[];
 }
 
 export interface GetIssuesParams {
@@ -91,7 +91,18 @@ export interface useIssuesReturnedValue {
   };
   actions: {
     getIssues: () => void;
-    setFilter: (filterId: string) => void;
+    setFilter: (filterIds: string[]) => void;
     setPage: (page: number) => void;
+  };
+}
+export interface useCurrentScreenReturnValue {
+  data: {
+    owner: string;
+    repo: string;
+    error?: Error;
+  };
+  actions: {
+    commitOwner: (id: string) => void;
+    commitRepo: (id: string) => void;
   };
 }

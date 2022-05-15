@@ -11,12 +11,16 @@ import CustomText from '../../components/CustomText';
 import Issue from './Issue';
 
 import styles from './styles'
+import useIssuesScreen from '../../hooks/useIssuesScreen';
 
 export default function IssuesScreen({navigation}: {navigation: RootTabScreenProps<'Issues'>}) {
   const issuesManager = useIssues();
+  const currentScreenManager = useIssuesScreen();
 
   const { issues, loading: loadingIssues, filtersActived, currentPage, error } = issuesManager.data;
   const { getIssues, setPage } = issuesManager.actions;
+
+  const { owner, repo } = currentScreenManager.data;
 
   useEffect(() => {
     getIssues();
@@ -28,17 +32,16 @@ export default function IssuesScreen({navigation}: {navigation: RootTabScreenPro
 
   return (
     <CustomView style={styles.container}>
-      <CustomView testID="scrollWrapper" style={styles.containerFiltersSelected}>
-        {filtersActived.length && (
-          <>
-            <CustomText>Filters actived:</CustomText>
-            <CustomText style={styles.filtersLabel}>
-              {filtersActived.map(({ id, label }, index: number) => (
-                <CustomText key={id}>{`${label} issues${index < filtersActived.length-1 ? ',' : ''}`}</CustomText>
-              ))}
-            </CustomText>
-          </>
-        )}
+      <CustomView style={styles.containerFiltersSelected}>
+        <CustomText>You're seeing: {owner}/{repo}</CustomText>
+        {filtersActived.length ? (
+          <CustomText>
+            You're filtering by: 
+            {filtersActived.map(({ id, label }, index: number) => (
+              <CustomText key={id}>{` ${label} issues${index < filtersActived.length-1 ? ',' : ''}`}</CustomText>
+            ))}
+          </CustomText>
+        ) : null}
       </CustomView>
 
       {error && <CustomText style={styles.error}>An error occurred: {error.message}</CustomText>}

@@ -22,6 +22,7 @@ export type RootTabParamList = {
   Issues: undefined;
   IssueDetails: undefined;
   Bookmark: undefined;
+  Filters: undefined;
 };
 
 export type RootTabScreenProps<Screen extends keyof RootTabParamList> = CompositeScreenProps<

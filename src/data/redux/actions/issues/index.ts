@@ -41,6 +41,6 @@ export const setPage = (pageNumber: number) => (dispatch: Dispatch<IssueAction>)
   dispatch({ type: IssueActionType.SET_PAGE, payload: pageNumber });
 };
 
-export const toggleFilter = (filterId: string) => (dispatch: Dispatch<IssueAction>) => {
-  dispatch({ type: IssueActionType.TOGGLE_FILTER, payload: filterId });
+export const toggleFilter = (filterIds: string[]) => (dispatch: Dispatch<IssueAction>) => {
+  dispatch({ type: IssueActionType.TOGGLE_FILTER, payload: filterIds });
 };

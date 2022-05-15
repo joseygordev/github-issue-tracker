@@ -19,7 +19,7 @@ export default StyleSheet.create({
   },
   container: {
     flex: 1,
-    backgroundColor: Colors.pageBackground,
+    // backgroundColor: Colors.pageBackground,
   },
   title: {
     fontSize: 18,
@@ -66,9 +66,6 @@ export default StyleSheet.create({
   containerFiltersSelected: {
     padding: 16,
     paddingBottom: 8,
-    backgroundColor: Colors.pageBackground,
+    // backgroundColor: Colors.pageBackground,
   },
-  filtersLabel: {
-    flexDirection: 'row',
-  }
 });
