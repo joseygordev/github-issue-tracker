@@ -63,7 +63,7 @@ export interface GetIssuesParams {
 
 export interface IssueItemProps {
   issue: Issue;
-  navigation: RootTabScreenProps<'Issues'>;
+  navigation: RootTabScreenProps<'Issues'|'Bookmark'>;
 }
 
 export interface IssueHeaderProps {

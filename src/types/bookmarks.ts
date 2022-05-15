@@ -1,34 +1,21 @@
 import { Issue } from './issues';
-
 export interface BookmarkState {
-  bookmarks: Issue[];
-  loading: boolean;
-  error?: Error;
+  bookmarks: number[];
 }
 
 export interface BookmarkAction {
   type: BookmarkActionType;
-  payload?: Issue[] | Issue | number | Error;
+  payload: number;
 }
 
 export enum BookmarkActionType {
-  GET_BOOKMARKS_PENDING = 'GET_BOOKMARKS_PENDING',
-  GET_BOOKMARKS_SUCCESS = 'GET_BOOKMARKS_SUCCESS',
-  GET_BOOKMARKS_ERROR = 'GET_BOOKMARKS_ERROR',
-
-  ADD_BOOKMARK_PENDING = 'ADD_BOOKMARK_PENDING',
-  ADD_BOOKMARK_SUCCESS = 'ADD_BOOKMARK_SUCCESS',
-  ADD_BOOKMARK_ERROR = 'ADD_BOOKMARK_ERROR',
-
-  REMOVE_BOOKMARK_PENDING = 'REMOVE_BOOKMARK_PENDING',
-  REMOVE_BOOKMARK_SUCCESS = 'REMOVE_BOOKMARK_SUCCESS',
-  REMOVE_BOOKMARK_ERROR = 'REMOVE_BOOKMARK_ERROR',
+  ADD_BOOKMARK = 'ADD_BOOKMARK',
+  REMOVE_BOOKMARK = 'REMOVE_BOOKMARK',
 }
 
 export interface useBookmarksReturnValue {
   data: {
     bookmarks: Issue[];
-    loading: boolean;
   };
   actions: {
     getBookmarks: () => void;

@@ -2,9 +2,10 @@ import { createStore, combineReducers, applyMiddleware, AnyAction } from 'redux'
 import thunk, { ThunkDispatch } from 'redux-thunk';
 import { useDispatch } from 'react-redux';
 
+import bookmarksReducer from './reducers/bookmarks';
 import issuesReducer from './reducers/issues';
 
-const rootReducer = combineReducers({ issuesReducer });
+const rootReducer = combineReducers({ issuesReducer, bookmarksReducer });
 
 export type AppState = ReturnType<typeof rootReducer>;
 
