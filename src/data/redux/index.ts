@@ -3,9 +3,10 @@ import thunk, { ThunkDispatch } from 'redux-thunk';
 import { useDispatch } from 'react-redux';
 
 import bookmarksReducer from './reducers/bookmarks';
+import commentsReducer from './reducers/comments';
 import issuesReducer from './reducers/issues';
 
-const rootReducer = combineReducers({ issuesReducer, bookmarksReducer });
+const rootReducer = combineReducers({ issuesReducer, bookmarksReducer, commentsReducer });
 
 export type AppState = ReturnType<typeof rootReducer>;
 

@@ -1,6 +1,6 @@
 import { Dispatch } from 'redux';
 
-import * as issueEndpoints from '../../api/issues';
+import * as issueEndpoints from '../../../api/issues';
 
 import { IssueActionType, IssueAction } from '../../../../types/issues';
 import { AppState } from '../..';

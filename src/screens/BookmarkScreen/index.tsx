@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import { View, FlatList } from 'react-native';
 import { Feather } from '@expo/vector-icons';
+import { useIsFocused } from '@react-navigation/native';
 
 import { RootTabScreenProps } from '../../types/navigation';
 
@@ -14,10 +15,17 @@ import Colors from '../../constants/Colors';
 
 export default function BookmarksScreen({navigation}: {navigation: RootTabScreenProps<'Bookmark'>}) {
   const bookmarksManager = useBookmarks();
+  const isFocused = useIsFocused();
+
   const { bookmarks } = bookmarksManager.data;
   const { getBookmarks } = bookmarksManager.actions;
 
-  useEffect(getBookmarks, []);
+  useEffect(() => {
+    if (isFocused) {
+      getBookmarks();
+    }
+  }, [isFocused]);
+
 
   return (
     <View style={styles.container}>

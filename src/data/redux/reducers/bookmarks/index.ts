@@ -11,6 +11,11 @@ export default (state: BookmarkState = initialState, action: BookmarkAction): Bo
         ...state,
         bookmarks: [...state.bookmarks, action.payload as number],
       };
+    case BookmarkActionType.REMOVE_BOOKMARK:
+      return {
+        ...state,
+        bookmarks: [...state.bookmarks.filter((bookmark) => bookmark !== action.payload as number)],
+      };
     default:
       return state;
   }

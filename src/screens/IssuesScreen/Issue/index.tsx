@@ -1,5 +1,6 @@
 import React from 'react';
 import { View, TouchableOpacity } from 'react-native';
+import { useNavigation } from '@react-navigation/native';
 
 import { IssueItemProps } from '../../../types/issues';
 
@@ -9,10 +10,14 @@ import Header from './Header';
 import styles from './styles';
 
 export default function Issue(props: IssueItemProps) {
+  const navigation = useNavigation();
+
   const { issue } = props;
 
   const goToDetails = () => {
-    console.log('goToDetails')
+    navigation.navigate('IssueDetails', {
+      issue: issue
+    })
   };
 
   return (
@@ -23,7 +28,7 @@ export default function Issue(props: IssueItemProps) {
         {issue.labels.map((label: any) => (
           <View key={label.id} style={[styles.label, { backgroundColor: '#' + label.color }]}>
             <CustomText style={styles.labelText}>
-              {label.name}
+              {label.name.replace(/\:([a-z]+)\:/g, '')}
             </CustomText>
           </View>
         ))}

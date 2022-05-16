@@ -1,3 +1,4 @@
+import { Issue } from './issues';
 import { BottomTabScreenProps } from '@react-navigation/bottom-tabs';
 import { CompositeScreenProps, NavigatorScreenParams } from '@react-navigation/native';
 import { NativeStackScreenProps } from '@react-navigation/native-stack';
@@ -11,6 +12,9 @@ declare global {
 export type RootStackParamList = {
   Root: NavigatorScreenParams<RootTabParamList> | undefined;
   Filters: undefined;
+  IssueDetails: {
+    issue: Issue
+  };
 };
 
 export type RootStackScreenProps<Screen extends keyof RootStackParamList> = NativeStackScreenProps<
@@ -20,8 +24,10 @@ export type RootStackScreenProps<Screen extends keyof RootStackParamList> = Nati
 
 export type RootTabParamList = {
   Issues: undefined;
-  IssueDetails: undefined;
   Bookmark: undefined;
+  IssueDetails: {
+    issue: Issue
+  };
   Filters: undefined;
 };
 

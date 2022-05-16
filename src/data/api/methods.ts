@@ -2,7 +2,7 @@ const BASE = 'https://api.github.com';
 
 export default {
   get: async function (endpoint: string) {
-    const response = await fetch(`${BASE}/${endpoint}`);
+    const response = await fetch(/(http(s?)):\/\//i.test(endpoint) ? endpoint : `${BASE}/${endpoint}`);
     const parsedResponse = await response.json();
 
     if (!response.ok) {

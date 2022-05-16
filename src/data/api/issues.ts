@@ -1,4 +1,4 @@
-import { GetIssuesParams, Issue } from '../../../types/issues';
+import { GetIssuesParams, Issue } from '../../types/issues';
 import methods from './methods';
 
 export async function get(queryParams: GetIssuesParams): Promise<Issue[]> {

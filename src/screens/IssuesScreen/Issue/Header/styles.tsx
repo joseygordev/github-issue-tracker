@@ -54,6 +54,7 @@ export default StyleSheet.create({
   },
   labelText: {
     fontSize: 12,
+    color: Colors.steel
   },
   timeAgo: {
     position: 'absolute',

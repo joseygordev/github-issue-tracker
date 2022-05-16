@@ -9,6 +9,7 @@ import { useNavigation } from '@react-navigation/native';
 import Colors from '../constants/Colors';
 import useColorScheme from '../hooks/useColorScheme';
 import FiltersScreen from '../screens/FiltersScreen';
+import IssueDetailsScreen from '../screens/IssueDetailsScreen';
 import IssuesScreen from '../screens/IssuesScreen';
 import BookmarkScreen from '../screens/BookmarkScreen';
 import CustomText from '../components/CustomText';
@@ -36,11 +37,12 @@ function RootNavigator() {
       <Stack.Group
         screenOptions={{
           presentation: 'modal', 
-          headerLeft: (props: any) => {
+          headerLeft: () => {
             return <CustomText onPress={() => navigation?.goBack()}>Back</CustomText>
           }
       }}>
         <Stack.Screen name="Filters" component={FiltersScreen} />
+        <Stack.Screen name="IssueDetails" component={IssueDetailsScreen} />
       </Stack.Group>
     </Stack.Navigator>
   );
@@ -82,7 +84,7 @@ function BottomTabNavigator() {
       <BottomTab.Screen
         name="Bookmark"
         component={BookmarkScreen}
-        options={({ navigation }: RootTabScreenProps<'Issues'>) => ({
+        options={({ navigation }: RootTabScreenProps<'Bookmark'>) => ({
           title: 'Bookmark',
           tabBarIcon: ({ color }) => <TabBarIcon name="bookmark" color={color} />,
           headerRight: () => (

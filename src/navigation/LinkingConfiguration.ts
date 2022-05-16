@@ -1,7 +1,7 @@
 import { LinkingOptions } from '@react-navigation/native';
 import * as Linking from 'expo-linking';
 
-import { RootStackParamList } from '../navigation';
+import { RootStackParamList } from '../types/navigation';
 
 const linking: LinkingOptions<RootStackParamList> = {
   prefixes: [Linking.makeUrl('/')],
@@ -14,11 +14,6 @@ const linking: LinkingOptions<RootStackParamList> = {
               IssuesScreen: 'one',
             },
           },
-          IssueDetails: {
-            screens: {
-              IssueDetailsScreen: 'two',
-            },
-          },
           Bookmark: {
             screens: {
               BookmarkScreen: 'two',
@@ -27,6 +22,7 @@ const linking: LinkingOptions<RootStackParamList> = {
         },
       },
       Filters: 'filters',
+      IssueDetails: 'issue details',
     },
   },
 };
