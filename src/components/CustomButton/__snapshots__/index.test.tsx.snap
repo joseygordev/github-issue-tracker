@@ -1,0 +1,113 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CustomButton it renders button with leftIcon 1`] = `
+<View
+  accessible={true}
+  collapsable={false}
+  focusable={true}
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Object {
+      "alignItems": "center",
+      "backgroundColor": "transparent",
+      "borderColor": "#00aaff",
+      "borderRadius": 15,
+      "borderWidth": 1,
+      "flexDirection": "row",
+      "height": 42,
+      "justifyContent": "center",
+      "marginVertical": 8,
+      "opacity": 1,
+      "width": 120,
+    }
+  }
+  testID="viewIssuesButton"
+>
+  <Text />
+  <Text
+    style={
+      Array [
+        Object {
+          "color": "#000",
+        },
+        Array [
+          Object {
+            "color": "#00aaff",
+            "fontSize": 12,
+            "letterSpacing": 0.8,
+          },
+          Object {},
+        ],
+        Object {
+          "fontFamily": "space-mono",
+        },
+      ]
+    }
+    testID="textValue"
+  >
+    BUTTON
+  </Text>
+</View>
+`;
+
+exports[`CustomButton it renders button with rightIcon 1`] = `
+<View
+  accessible={true}
+  collapsable={false}
+  focusable={true}
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Object {
+      "alignItems": "center",
+      "backgroundColor": "transparent",
+      "borderColor": "#00aaff",
+      "borderRadius": 15,
+      "borderWidth": 1,
+      "flexDirection": "row",
+      "height": 42,
+      "justifyContent": "center",
+      "marginVertical": 8,
+      "opacity": 1,
+      "width": 120,
+    }
+  }
+  testID="viewIssuesButton"
+>
+  <Text
+    style={
+      Array [
+        Object {
+          "color": "#000",
+        },
+        Array [
+          Object {
+            "color": "#00aaff",
+            "fontSize": 12,
+            "letterSpacing": 0.8,
+          },
+          Object {},
+        ],
+        Object {
+          "fontFamily": "space-mono",
+        },
+      ]
+    }
+    testID="textValue"
+  >
+    BUTTON
+  </Text>
+  <Text />
+</View>
+`;

@@ -56,7 +56,7 @@ export default (state: IssueState = initialState, action: IssueAction): IssueSta
 
     case IssueActionType.TOGGLE_FILTER:
       const payload = action.payload as string[];
-      const newFilters = [...state.filters].map((filter) => ({...filter, isActive: !!payload.includes(filter.id)}));
+      const newFilters = [...state.filters].map((filter) => ({...filter, isActive: !payload.includes(filter.id)}));
 
       return {
         ...state,

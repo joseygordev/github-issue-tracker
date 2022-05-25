@@ -23,7 +23,7 @@ export default function Issue(props: IssueItemProps) {
   return (
     <TouchableOpacity testID="cardButton" activeOpacity={0.8} onPress={goToDetails} style={styles.card}>
       <Header issue={issue} />
-      <CustomText style={styles.title}>{issue.title}</CustomText>
+      <CustomText testID="issueTitle" style={styles.title}>{issue.title}</CustomText>
       <View style={styles.labels}>
         {issue.labels.map((label: any) => (
           <View key={label.id} style={[styles.label, { backgroundColor: '#' + label.color }]}>

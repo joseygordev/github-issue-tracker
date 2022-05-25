@@ -14,5 +14,5 @@ export default function CustomView(props: ViewProps) {
   const { style, lightColor, darkColor, ...otherProps } = props;
   const backgroundColor = useThemeColor({ light: lightColor, dark: darkColor }, 'background');
 
-  return <DefaultView style={[{ backgroundColor }, style]} {...otherProps} />;
+  return <DefaultView testID='customView' style={[{ backgroundColor }, style]} {...otherProps} />;
 }

@@ -14,5 +14,5 @@ export default function CustomText(props: TextProps) {
   const { style, lightColor, darkColor, ...otherProps } = props;
   const color = useThemeColor({ light: lightColor, dark: darkColor }, 'text');
 
-  return <DefaultText style={[{ color }, style, { fontFamily: 'space-mono' }]} {...otherProps} />;
+  return <DefaultText testID='textValue' style={[{ color }, style, { fontFamily: 'space-mono' }]} {...otherProps} />;
 }

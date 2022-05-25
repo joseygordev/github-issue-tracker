@@ -60,9 +60,9 @@ export default function FiltersScreen() {
     <CustomView style={styles.container}>
       <View>
         <View style={styles.inputs}>
-          <CustomTextInput name="Organization" testID="organizationInput" value={owner} onChangeText={setOwner} />
+          <CustomTextInput name="Owner" testID="ownerInput" value={owner} onChangeText={setOwner} />
           <CustomText style={{ marginTop: 20, fontSize: 20, color: Colors.border }}>/</CustomText>
-          <CustomTextInput name="Repository" value={repo} onChangeText={setRepo} />
+          <CustomTextInput name="Repository"  testID="repoInput" value={repo} onChangeText={setRepo} />
         </View>
         <CustomText>Filters:</CustomText>
         {filters.map(({ id, label }) => (

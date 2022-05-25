@@ -38,7 +38,7 @@ export default function BookmarksScreen({navigation}: {navigation: RootTabScreen
       /> : 
       <View style={styles.emptyContent}>
         <Feather size={60} color={Colors.border + '88'} name="star"/>
-        <CustomText style={styles.emptyText}>You don't have bookmarks yet!</CustomText>
+        <CustomText testID="fallbackMessage" style={styles.emptyText}>You don't have bookmarks yet!</CustomText>
       </View>}
     </View>
   );

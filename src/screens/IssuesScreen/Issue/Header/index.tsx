@@ -17,13 +17,13 @@ export default function Header(props: IssueHeaderProps) {
     <View style={styles.container}>
       <View style={styles.content}>
         <Image style={styles.profileImage} source={{ uri: issue.user.avatar_url }} />
-        <CustomText style={styles.username}>{issue.user.login}</CustomText>
+        <CustomText testID='userName' style={styles.username}>{issue.user.login}</CustomText>
         <CustomText style={styles.timeAgoText}> • {moment.duration(moment().diff(moment(issue.created_at))).humanize() + ' ago'}</CustomText>
         {issue.isBookmarked && (
-          <>
+          <View testID='bookmarked'>
             <CustomText style={styles.timeAgoText}> • </CustomText>
             <AntDesign size={16} color={Colors.border} name="star" />
-          </>
+          </View>
         )}
       </View>
       <View style={[styles.state, { backgroundColor: issue.state == 'open' ? Colors.green : Colors.border }]}>

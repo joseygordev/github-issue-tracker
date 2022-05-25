@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1653504236111" clover="3.2.0">
+  <project timestamp="1653504236111" name="All files">
+    <metrics statements="168" coveredstatements="80" conditionals="60" coveredconditionals="18" methods="67" coveredmethods="21" elements="295" coveredelements="119" complexity="0" loc="168" ncloc="168" packages="22" files="38" classes="38"/>
+    <package name="components.CustomButton">
+      <metrics statements="4" coveredstatements="4" conditionals="7" coveredconditionals="4" methods="1" coveredmethods="1"/>
+      <file name="index.tsx" path="C:\Users\JDantas\Documents\github-issue-tracker\src\components\CustomButton\index.tsx">
+        <metrics statements="4" coveredstatements="4" conditionals="7" coveredconditionals="4" methods="1" coveredmethods="1"/>
+        <line num="18" count="2" type="stmt"/>
+        <line num="20" count="2" type="stmt"/>
+        <line num="27" count="2" type="cond" truecount="1" falsecount="1"/>
+        <line num="29" count="2" type="stmt"/>
+      </file>
+      <file name="styles.tsx" path="C:\Users\JDantas\Documents\github-issue-tracker\src\components\CustomButton\styles.tsx">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+    </package>
+    <package name="components.CustomText">
+      <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <file name="index.tsx" path="C:\Users\JDantas\Documents\github-issue-tracker\src\components\CustomText\index.tsx">
+        <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="14" count="14" type="stmt"/>
+        <line num="15" count="14" type="stmt"/>
+        <line num="17" count="14" type="stmt"/>
+      </file>
+    </package>
+    <package name="components.CustomTextInput">
+      <metrics statements="5" coveredstatements="3" conditionals="2" coveredconditionals="1" methods="3" coveredmethods="1"/>
+      <file name="index.tsx" path="C:\Users\JDantas\Documents\github-issue-tracker\src\components\CustomTextInput\index.tsx">
+        <metrics statements="5" coveredstatements="3" conditionals="2" coveredconditionals="1" methods="3" coveredmethods="1"/>
+        <line num="11" count="4" type="stmt"/>
+        <line num="13" count="4" type="stmt"/>
+        <line num="15" count="4" type="stmt"/>
+        <line num="28" count="0" type="stmt"/>
+        <line num="29" count="0" type="stmt"/>
+      </file>
+      <file name="styles.tsx" path="C:\Users\JDantas\Documents\github-issue-tracker\src\components\CustomTextInput\styles.tsx">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+    </package>
+    <package name="components.CustomView">
+      <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <file name="index.tsx" path="C:\Users\JDantas\Documents\github-issue-tracker\src\components\CustomView\index.tsx">
+        <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="14" count="2" type="stmt"/>
+        <line num="15" count="2" type="stmt"/>
+        <line num="17" count="2" type="stmt"/>
+      </file>
+    </package>
+    <package name="constants">
+      <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <file name="Colors.ts" path="C:\Users\JDantas\Documents\github-issue-tracker\src\constants\Colors.ts">
+        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+      </file>
+      <file name="Layout.ts" path="C:\Users\JDantas\Documents\github-issue-tracker\src\constants\Layout.ts">
+        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="data.api">
+      <metrics statements="10" coveredstatements="1" conditionals="6" coveredconditionals="0" methods="3" coveredmethods="0"/>
+      <file name="comments.ts" path="C:\Users\JDantas\Documents\github-issue-tracker\src\data\api\comments.ts">
+        <metrics statements="2" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="5" count="0" type="stmt"/>
+        <line num="7" count="0" type="stmt"/>
+      </file>
+      <file name="issues.ts" path="C:\Users\JDantas\Documents\github-issue-tracker\src\data\api\issues.ts">
+        <metrics statements="2" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="5" count="0" type="stmt"/>
+        <line num="7" count="0" type="stmt"/>
+      </file>
+      <file name="methods.ts" path="C:\Users\JDantas\Documents\github-issue-tracker\src\data\api\methods.ts">
+        <metrics statements="6" coveredstatements="1" conditionals="6" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="5" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="6" count="0" type="stmt"/>
+        <line num="8" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="9" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="12" count="0" type="stmt"/>
+      </file>
+    </package>
+    <package name="data.mocks">
+      <metrics statements="4" coveredstatements="4" conditionals="1" coveredconditionals="1" methods="1" coveredmethods="1"/>
+      <file name="issues.ts" path="C:\Users\JDantas\Documents\github-issue-tracker\src\data\mocks\issues.ts">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="45" count="1" type="stmt"/>
+      </file>
+      <file name="navigation.tsx" path="C:\Users\JDantas\Documents\github-issue-tracker\src\data\mocks\navigation.tsx">
+        <metrics statements="3" coveredstatements="3" conditionals="1" coveredconditionals="1" methods="1" coveredmethods="1"/>
+        <line num="6" count="1" type="stmt"/>
+        <line num="7" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="8" count="1" type="stmt"/>
+      </file>
+      <file name="users.ts" path="C:\Users\JDantas\Documents\github-issue-tracker\src\data\mocks\users.ts">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+    </package>
+    <package name="data.redux">
+      <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <file name="index.ts" path="C:\Users\JDantas\Documents\github-issue-tracker\src\data\redux\index.ts">
+        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="9" count="1" type="stmt"/>
+        <line num="15" count="4" type="stmt"/>
+      </file>
+    </package>
+    <package name="data.redux.actions.bookmarks">
+      <metrics statements="4" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="0"/>
+      <file name="index.ts" path="C:\Users\JDantas\Documents\github-issue-tracker\src\data\redux\actions\bookmarks\index.ts">
+        <metrics statements="4" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="0"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="6" count="0" type="stmt"/>
+        <line num="9" count="1" type="stmt"/>
+        <line num="10" count="0" type="stmt"/>
+      </file>
+    </package>
+    <package name="data.redux.actions.comments">
+      <metrics statements="6" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="0"/>
+      <file name="index.ts" path="C:\Users\JDantas\Documents\github-issue-tracker\src\data\redux\actions\comments\index.ts">
+        <metrics statements="6" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="0"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="6" count="0" type="stmt"/>
+        <line num="7" count="0" type="stmt"/>
+        <line num="8" count="0" type="stmt"/>
+        <line num="9" count="0" type="stmt"/>
+        <line num="11" count="0" type="stmt"/>
+      </file>
+    </package>
+    <package name="data.redux.actions.issues">
+      <metrics statements="18" coveredstatements="5" conditionals="4" coveredconditionals="0" methods="12" coveredmethods="0"/>
+      <file name="index.ts" path="C:\Users\JDantas\Documents\github-issue-tracker\src\data\redux\actions\issues\index.ts">
+        <metrics statements="18" coveredstatements="5" conditionals="4" coveredconditionals="0" methods="12" coveredmethods="0"/>
+        <line num="8" count="1" type="stmt"/>
+        <line num="9" count="0" type="stmt"/>
+        <line num="11" count="0" type="stmt"/>
+        <line num="13" count="0" type="stmt"/>
+        <line num="14" count="0" type="cond" truecount="0" falsecount="4"/>
+        <line num="15" count="0" type="stmt"/>
+        <line num="18" count="0" type="stmt"/>
+        <line num="19" count="0" type="stmt"/>
+        <line num="26" count="0" type="stmt"/>
+        <line num="28" count="0" type="stmt"/>
+        <line num="32" count="1" type="stmt"/>
+        <line num="33" count="0" type="stmt"/>
+        <line num="36" count="1" type="stmt"/>
+        <line num="37" count="0" type="stmt"/>
+        <line num="40" count="1" type="stmt"/>
+        <line num="41" count="0" type="stmt"/>
+        <line num="44" count="1" type="stmt"/>
+        <line num="45" count="0" type="stmt"/>
+      </file>
+    </package>
+    <package name="data.redux.reducers.bookmarks">
+      <metrics statements="6" coveredstatements="3" conditionals="4" coveredconditionals="2" methods="2" coveredmethods="1"/>
+      <file name="index.ts" path="C:\Users\JDantas\Documents\github-issue-tracker\src\data\redux\reducers\bookmarks\index.ts">
+        <metrics statements="6" coveredstatements="3" conditionals="4" coveredconditionals="2" methods="2" coveredmethods="1"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="8" count="3" type="cond" truecount="1" falsecount="2"/>
+        <line num="10" count="0" type="stmt"/>
+        <line num="15" count="0" type="stmt"/>
+        <line num="17" count="0" type="stmt"/>
+        <line num="20" count="3" type="stmt"/>
+      </file>
+    </package>
+    <package name="data.redux.reducers.comments">
+      <metrics statements="6" coveredstatements="3" conditionals="5" coveredconditionals="2" methods="1" coveredmethods="1"/>
+      <file name="index.ts" path="C:\Users\JDantas\Documents\github-issue-tracker\src\data\redux\reducers\comments\index.ts">
+        <metrics statements="6" coveredstatements="3" conditionals="5" coveredconditionals="2" methods="1" coveredmethods="1"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="9" count="3" type="cond" truecount="1" falsecount="3"/>
+        <line num="11" count="0" type="stmt"/>
+        <line num="13" count="0" type="stmt"/>
+        <line num="20" count="0" type="stmt"/>
+        <line num="23" count="3" type="stmt"/>
+      </file>
+    </package>
+    <package name="data.redux.reducers.issues">
+      <metrics statements="13" coveredstatements="4" conditionals="9" coveredconditionals="2" methods="2" coveredmethods="1"/>
+      <file name="index.ts" path="C:\Users\JDantas\Documents\github-issue-tracker\src\data\redux\reducers\issues\index.ts">
+        <metrics statements="13" coveredstatements="4" conditionals="9" coveredconditionals="2" methods="2" coveredmethods="1"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="8" count="1" type="stmt"/>
+        <line num="18" count="3" type="cond" truecount="1" falsecount="7"/>
+        <line num="20" count="0" type="stmt"/>
+        <line num="23" count="0" type="stmt"/>
+        <line num="31" count="0" type="stmt"/>
+        <line num="40" count="0" type="stmt"/>
+        <line num="46" count="0" type="stmt"/>
+        <line num="52" count="0" type="stmt"/>
+        <line num="58" count="0" type="stmt"/>
+        <line num="59" count="0" type="stmt"/>
+        <line num="61" count="0" type="stmt"/>
+        <line num="68" count="3" type="stmt"/>
+      </file>
+    </package>
+    <package name="hooks">
+      <metrics statements="28" coveredstatements="18" conditionals="2" coveredconditionals="1" methods="12" coveredmethods="7"/>
+      <file name="useColorScheme.ts" path="C:\Users\JDantas\Documents\github-issue-tracker\src\hooks\useColorScheme.ts">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="4" count="16" type="stmt"/>
+      </file>
+      <file name="useIssues.ts" path="C:\Users\JDantas\Documents\github-issue-tracker\src\hooks\useIssues.ts">
+        <metrics statements="14" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="6" coveredmethods="3"/>
+        <line num="14" count="2" type="stmt"/>
+        <line num="16" count="2" type="stmt"/>
+        <line num="18" count="2" type="stmt"/>
+        <line num="19" count="0" type="stmt"/>
+        <line num="22" count="2" type="stmt"/>
+        <line num="23" count="0" type="stmt"/>
+        <line num="24" count="0" type="stmt"/>
+        <line num="25" count="0" type="stmt"/>
+        <line num="28" count="2" type="stmt"/>
+        <line num="29" count="0" type="stmt"/>
+        <line num="30" count="0" type="stmt"/>
+        <line num="31" count="0" type="stmt"/>
+        <line num="34" count="4" type="stmt"/>
+        <line num="36" count="2" type="stmt"/>
+      </file>
+      <file name="useIssuesScreen.ts" path="C:\Users\JDantas\Documents\github-issue-tracker\src\hooks\useIssuesScreen.ts">
+        <metrics statements="8" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="2"/>
+        <line num="7" count="2" type="stmt"/>
+        <line num="8" count="2" type="stmt"/>
+        <line num="10" count="2" type="stmt"/>
+        <line num="12" count="2" type="stmt"/>
+        <line num="13" count="0" type="stmt"/>
+        <line num="15" count="2" type="stmt"/>
+        <line num="16" count="0" type="stmt"/>
+        <line num="19" count="2" type="stmt"/>
+      </file>
+      <file name="useThemeColor.ts" path="C:\Users\JDantas\Documents\github-issue-tracker\src\hooks\useThemeColor.ts">
+        <metrics statements="5" coveredstatements="4" conditionals="2" coveredconditionals="1" methods="1" coveredmethods="1"/>
+        <line num="8" count="16" type="stmt"/>
+        <line num="9" count="16" type="stmt"/>
+        <line num="11" count="16" type="cond" truecount="1" falsecount="1"/>
+        <line num="12" count="0" type="stmt"/>
+        <line num="14" count="16" type="stmt"/>
+      </file>
+    </package>
+    <package name="screens.FiltersScreen">
+      <metrics statements="27" coveredstatements="19" conditionals="8" coveredconditionals="5" methods="9" coveredmethods="5"/>
+      <file name="index.tsx" path="C:\Users\JDantas\Documents\github-issue-tracker\src\screens\FiltersScreen\index.tsx">
+        <metrics statements="27" coveredstatements="19" conditionals="8" coveredconditionals="5" methods="9" coveredmethods="5"/>
+        <line num="20" count="2" type="stmt"/>
+        <line num="21" count="2" type="stmt"/>
+        <line num="22" count="2" type="stmt"/>
+        <line num="23" count="2" type="stmt"/>
+        <line num="25" count="2" type="stmt"/>
+        <line num="26" count="2" type="stmt"/>
+        <line num="27" count="2" type="stmt"/>
+        <line num="29" count="2" type="stmt"/>
+        <line num="30" count="2" type="stmt"/>
+        <line num="31" count="2" type="stmt"/>
+        <line num="33" count="2" type="stmt"/>
+        <line num="34" count="1" type="cond" truecount="1" falsecount="1"/>
+        <line num="35" count="1" type="stmt"/>
+        <line num="37" count="2" type="cond" truecount="2" falsecount="0"/>
+        <line num="42" count="2" type="stmt"/>
+        <line num="43" count="0" type="stmt"/>
+        <line num="44" count="0" type="stmt"/>
+        <line num="45" count="0" type="stmt"/>
+        <line num="46" count="0" type="stmt"/>
+        <line num="49" count="2" type="stmt"/>
+        <line num="50" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="51" count="0" type="stmt"/>
+        <line num="53" count="0" type="stmt"/>
+        <line num="57" count="2" type="stmt"/>
+        <line num="59" count="2" type="stmt"/>
+        <line num="69" count="4" type="stmt"/>
+        <line num="70" count="0" type="stmt"/>
+      </file>
+      <file name="styles.tsx" path="C:\Users\JDantas\Documents\github-issue-tracker\src\screens\FiltersScreen\styles.tsx">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+    </package>
+    <package name="screens.IssueDetailsScreen">
+      <metrics statements="17" coveredstatements="0" conditionals="8" coveredconditionals="0" methods="9" coveredmethods="0"/>
+      <file name="index.tsx" path="C:\Users\JDantas\Documents\github-issue-tracker\src\screens\IssueDetailsScreen\index.tsx">
+        <metrics statements="17" coveredstatements="0" conditionals="8" coveredconditionals="0" methods="9" coveredmethods="0"/>
+        <line num="26" count="0" type="stmt"/>
+        <line num="28" count="0" type="stmt"/>
+        <line num="29" count="0" type="stmt"/>
+        <line num="31" count="0" type="stmt"/>
+        <line num="33" count="0" type="stmt"/>
+        <line num="34" count="0" type="stmt"/>
+        <line num="37" count="0" type="stmt"/>
+        <line num="38" count="0" type="stmt"/>
+        <line num="39" count="0" type="stmt"/>
+        <line num="42" count="0" type="stmt"/>
+        <line num="43" count="0" type="stmt"/>
+        <line num="44" count="0" type="stmt"/>
+        <line num="47" count="0" type="stmt"/>
+        <line num="48" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="50" count="0" type="stmt"/>
+        <line num="59" count="0" type="stmt"/>
+        <line num="83" count="0" type="stmt"/>
+      </file>
+      <file name="styles.tsx" path="C:\Users\JDantas\Documents\github-issue-tracker\src\screens\IssueDetailsScreen\styles.tsx">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+    </package>
+    <package name="screens.IssueDetailsScreen.Comment">
+      <metrics statements="2" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+      <file name="index.tsx" path="C:\Users\JDantas\Documents\github-issue-tracker\src\screens\IssueDetailsScreen\Comment\index.tsx">
+        <metrics statements="2" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="12" count="0" type="stmt"/>
+        <line num="14" count="0" type="stmt"/>
+      </file>
+      <file name="styles.tsx" path="C:\Users\JDantas\Documents\github-issue-tracker\src\screens\IssueDetailsScreen\Comment\styles.tsx">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+    </package>
+    <package name="screens.IssuesScreen.Issue">
+      <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <file name="styles.tsx" path="C:\Users\JDantas\Documents\github-issue-tracker\src\screens\IssuesScreen\Issue\styles.tsx">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+    </package>
+    <package name="screens.IssuesScreen.Issue.Header">
+      <metrics statements="2" coveredstatements="0" conditionals="4" coveredconditionals="0" methods="1" coveredmethods="0"/>
+      <file name="index.tsx" path="C:\Users\JDantas\Documents\github-issue-tracker\src\screens\IssuesScreen\Issue\Header\index.tsx">
+        <metrics statements="2" coveredstatements="0" conditionals="4" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="14" count="0" type="stmt"/>
+        <line num="16" count="0" type="stmt"/>
+      </file>
+      <file name="styles.tsx" path="C:\Users\JDantas\Documents\github-issue-tracker\src\screens\IssuesScreen\Issue\Header\styles.tsx">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+    </package>
+    <package name="types">
+      <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <file name="bookmarks.ts" path="C:\Users\JDantas\Documents\github-issue-tracker\src\types\bookmarks.ts">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="comments.ts" path="C:\Users\JDantas\Documents\github-issue-tracker\src\types\comments.ts">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="issues.ts" path="C:\Users\JDantas\Documents\github-issue-tracker\src\types\issues.ts">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+    </package>
+    <package name="utils">
+      <metrics statements="4" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+      <file name="helpers.ts" path="C:\Users\JDantas\Documents\github-issue-tracker\src\utils\helpers.ts">
+        <metrics statements="4" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="0" type="stmt"/>
+        <line num="9" count="0" type="stmt"/>
+        <line num="21" count="0" type="stmt"/>
+      </file>
+    </package>
+  </project>
+</coverage>

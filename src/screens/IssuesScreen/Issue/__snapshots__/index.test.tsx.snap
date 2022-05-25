@@ -1,0 +1,211 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Issue it renders Issue correctly 1`] = `
+<View
+  accessible={true}
+  collapsable={false}
+  focusable={true}
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Object {
+      "backgroundColor": "#fff",
+      "borderRadius": 8,
+      "elevation": 4,
+      "marginBottom": 16,
+      "opacity": 1,
+      "paddingHorizontal": 16,
+      "paddingVertical": 16,
+      "shadowColor": "#414d5b",
+      "shadowOffset": Object {
+        "height": 2,
+        "width": 2,
+      },
+      "shadowOpacity": 0.1,
+      "shadowRadius": 3,
+    }
+  }
+  testID="cardButton"
+>
+  <View
+    style={
+      Object {
+        "flexDirection": "column",
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "flexDirection": "row",
+        }
+      }
+    >
+      <Image
+        source={
+          Object {
+            "uri": "mock_url",
+          }
+        }
+        style={
+          Object {
+            "borderRadius": 10,
+            "height": 20,
+            "marginRight": 8,
+            "marginTop": 1,
+            "width": 20,
+          }
+        }
+      />
+      <Text
+        style={
+          Array [
+            Object {
+              "color": "#000",
+            },
+            Object {
+              "color": "#414d5b",
+              "fontSize": 12,
+            },
+            Object {
+              "fontFamily": "space-mono",
+            },
+          ]
+        }
+        testID="userName"
+      >
+        mock_login
+      </Text>
+      <Text
+        style={
+          Array [
+            Object {
+              "color": "#000",
+            },
+            Object {
+              "color": "#aab2ba",
+              "fontSize": 12,
+            },
+            Object {
+              "fontFamily": "space-mono",
+            },
+          ]
+        }
+        testID="textValue"
+      >
+         • 
+        a few seconds ago
+      </Text>
+    </View>
+    <View
+      style={
+        Array [
+          Object {
+            "borderRadius": 16,
+            "marginVertical": 8,
+            "maxWidth": 80,
+            "paddingLeft": 12,
+            "paddingRight": 12,
+            "paddingVertical": 4,
+          },
+          Object {
+            "backgroundColor": "#16c65d",
+          },
+        ]
+      }
+    >
+      <Text
+        style={
+          Array [
+            Object {
+              "color": "#000",
+            },
+            Object {
+              "color": "#fff",
+              "textAlign": "center",
+            },
+            Object {
+              "fontFamily": "space-mono",
+            },
+          ]
+        }
+        testID="textValue"
+      >
+        Open
+      </Text>
+    </View>
+  </View>
+  <Text
+    style={
+      Array [
+        Object {
+          "color": "#000",
+        },
+        Object {
+          "maxWidth": 734,
+        },
+        Object {
+          "fontFamily": "space-mono",
+        },
+      ]
+    }
+    testID="issueTitle"
+  >
+    Mock
+  </Text>
+  <View
+    style={
+      Object {
+        "flexDirection": "row",
+        "flexWrap": "wrap",
+        "marginTop": 8,
+      }
+    }
+  >
+    <View
+      style={
+        Array [
+          Object {
+            "alignItems": "center",
+            "borderRadius": 16,
+            "flexDirection": "row",
+            "height": 22,
+            "marginRight": 8,
+            "marginTop": 8,
+            "paddingHorizontal": 10,
+          },
+          Object {
+            "backgroundColor": "##000",
+          },
+        ]
+      }
+    >
+      <Text
+        style={
+          Array [
+            Object {
+              "color": "#000",
+            },
+            Object {
+              "color": "#414d5b",
+              "fontSize": 12,
+            },
+            Object {
+              "fontFamily": "space-mono",
+            },
+          ]
+        }
+        testID="textValue"
+      >
+        mock label
+      </Text>
+    </View>
+  </View>
+</View>
+`;

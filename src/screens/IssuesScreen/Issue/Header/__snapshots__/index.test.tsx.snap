@@ -1,0 +1,113 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header it renders Header correctly 1`] = `
+<View
+  style={
+    Object {
+      "flexDirection": "column",
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "flexDirection": "row",
+      }
+    }
+  >
+    <Image
+      source={
+        Object {
+          "uri": "mock_url",
+        }
+      }
+      style={
+        Object {
+          "borderRadius": 10,
+          "height": 20,
+          "marginRight": 8,
+          "marginTop": 1,
+          "width": 20,
+        }
+      }
+    />
+    <Text
+      style={
+        Array [
+          Object {
+            "color": "#000",
+          },
+          Object {
+            "color": "#414d5b",
+            "fontSize": 12,
+          },
+          Object {
+            "fontFamily": "space-mono",
+          },
+        ]
+      }
+      testID="userName"
+    >
+      mock_login
+    </Text>
+    <Text
+      style={
+        Array [
+          Object {
+            "color": "#000",
+          },
+          Object {
+            "color": "#aab2ba",
+            "fontSize": 12,
+          },
+          Object {
+            "fontFamily": "space-mono",
+          },
+        ]
+      }
+      testID="textValue"
+    >
+       • 
+      a few seconds ago
+    </Text>
+  </View>
+  <View
+    style={
+      Array [
+        Object {
+          "borderRadius": 16,
+          "marginVertical": 8,
+          "maxWidth": 80,
+          "paddingLeft": 12,
+          "paddingRight": 12,
+          "paddingVertical": 4,
+        },
+        Object {
+          "backgroundColor": "#16c65d",
+        },
+      ]
+    }
+  >
+    <Text
+      style={
+        Array [
+          Object {
+            "color": "#000",
+          },
+          Object {
+            "color": "#fff",
+            "textAlign": "center",
+          },
+          Object {
+            "fontFamily": "space-mono",
+          },
+        ]
+      }
+      testID="textValue"
+    >
+      Open
+    </Text>
+  </View>
+</View>
+`;
